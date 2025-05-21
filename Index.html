@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curti Burger</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Curti Burger</h1>
+    </header>
+
+    <main>
+        <section id="menu"></section>
+
+        <section id="carrinho">
+            <h2>Carrinho</h2>
+            <div id="itens-carrinho"></div>
+            <p id="total"><strong>Total:</strong> R$ 0,00</p>
+            <button onclick="limparCarrinho()" class="danger">Limpar Carrinho</button>
+
+            <h3>Forma de Pagamento</h3>
+            <select id="pagamento" onchange="atualizarPagamento()">
+                <option>Dinheiro</option>
+                <option>Pix</option>
+                <option>Cartão Crédito</option>
+                <option>Cartão Débito</option>
+            </select>
+
+            <div id="troco-container" class="pagamento-extra">
+                <label>Troco para quanto?</label>
+                <input type="number" id="troco" placeholder="Ex: 50">
+                <label><input type="checkbox" id="sem-troco"> Não precisa de troco</label>
+            </div>
+
+            <div id="pix-container" class="pagamento-extra">
+                <p><strong>Chave PIX:</strong> 21994796613</p>
+                <p>Enviar comprovante pelo WhatsApp</p>
+            </div>
+
+            <h3>Informações do Cliente</h3>
+            <input type="text" id="nome" placeholder="Nome"><br>
+            <input type="text" id="endereco" placeholder="Endereço (com ponto de referência)"><br>
+            <input type="text" id="telefone" placeholder="Telefone"><br>
+            <textarea id="obs" placeholder="Observações"></textarea><br>
+
+            <button onclick="finalizarPedido()" class="finalizar">Finalizar Pedido</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Curti Burger</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
