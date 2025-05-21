@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background: #fff;
+    color: #000;
+    padding: 1rem;
+}
+
+header {
+    background: #ff6600;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+h2 {
+    color: #ff6600;
+    margin-top: 2rem;
+}
+
+section {
+    margin-top: 1.5rem;
+}
+
+.produto {
+    background: #f4f4f4;
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 1rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+button.adicionar {
+    background: #ff6600;
+    color: white;
+}
+
+button.remover {
+    background: #ccc;
+    color: #000;
+}
+
+button.danger {
+    background: #f44336;
+    color: white;
+}
+
+button.finalizar {
+    background: #000;
+    color: white;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 2px solid #ff6600;
+    border-radius: 8px;
+    margin-top: 0.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+footer {
+    margin-top: 2rem;
+    text-align: center;
+    color: #888;
+}
+
+.pagamento-extra {
+    display: none;
+}
